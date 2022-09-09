@@ -1,7 +1,7 @@
 #include<stdio.h>
 	/*this is where the code begins*/
 
-	int main(void)
+int main(void)
 {
 	/*first thing is to create a  string and put it in a char container*/
 
