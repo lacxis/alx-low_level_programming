@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: First thing is to create a string and put it in a char containerput the string in Mystr to the screen
+ * Description: Programming is like building a multilingual puzzle
  *
  * Return: Always 0 (Success)
  */
