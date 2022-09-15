@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 /**
- *main - A Program that prints "_putchar"
- * Return: 0 (success)
+ *main - Program that prints "_putchar"
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -12,8 +11,8 @@ int main(void)
 
 	for (c = 0; c < 8; c++)
 	{
-		putchar(p[c]);
+		_putchar(p[c]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
