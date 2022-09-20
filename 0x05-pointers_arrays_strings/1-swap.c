@@ -1,18 +1,15 @@
-/*
- * File: 1-swap.c
- * Auth: Samson Ajulor
- */
-
 #include "main.h"
-
 /**
- * swap_int - Swaps the values of two integers.
- * @a: The first integer to be swapped.
- * @b: The second integer to be swapped.
+ * swap_int- Swaps two integers variable
+ * @a : First parameter
+ * @b : Second parameter
+ * Return: void
  */
 void swap_int(int *a, int *b)
 {
-	int tmp = *a;
+	int i;
+
+	i = *a;
 	*a = *b;
-	*b = tmp;
+	*b = i;
 }

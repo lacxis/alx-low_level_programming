@@ -1,18 +1,17 @@
-/*
- * File: 3-puts.c
- * Auth: Samson Ajulor
- */
-
 #include "main.h"
-
 /**
- * _puts - Prints a string to stdout.
- * @str: The string to be printed.
+ * _puts- print out charater
+ * @str : pointer to the character variable
+ * Return: void
  */
+
 void _puts(char *str)
 {
-	while (*str)
-		_putchar(*str++);
+	int i;
 
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 	_putchar('\n');
 }

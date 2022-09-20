@@ -1,24 +1,26 @@
-/*
- * File: 4-print_rev.c
- * Auth: Samson Ajulor
- */
-
 #include "main.h"
-
 /**
- * print_rev - Prints a string in reverse.
- * @s: The string to be printed.
+ * print_rev- reverse a given string
+ * @str : string to be revered
+ * Return: void
  */
-void print_rev(char *s)
+void print_rev(char *str)
 {
-	int len = 0, index;
+	int i, j, len;
 
-	while (s[index++])
-		len++;
+	i = 0;
 
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+
+	len = i;
+
+	for (j = len - 1; j >= 0; j--)
+	{
+		_putchar(str[j]);
+	}
 
 	_putchar('\n');
 }
-
