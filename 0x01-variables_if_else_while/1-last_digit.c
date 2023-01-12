@@ -1,12 +1,18 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* outputs random number, prints last digit, prints compares to a few #'s */
-
 /**
- * main - outputs random number and compares last digit to a few #'s
+ * main - outputs random numbers and place them between 3 outputs.
+ *
+ * Description -  A program that outputs random digits and place the last value
+ * of the digits between:
+ * (a) greater than 5.
+ * (b) equals to 0.
+ * (c) less than 6 and is not 0.
+ *
  * Return: returns 0
  */
+
 int main(void)
 {
 	int n;
@@ -20,10 +26,15 @@ int main(void)
 	printf("Last digit of %d is %d ", n, f);
 
 	if (f > 5)
+	{
 		printf("and is greater than 5\n");
-	if (f == 0)
+	}
+
+	else if (f == 0)
+	{
 		printf("and is 0\n");
-	if (f < 6 && !(f == 0))
+	}
+	else if (f < 6 && !(f == 0))
 		printf("and is less than 6 and not 0\n");
 	return (0);
 }
