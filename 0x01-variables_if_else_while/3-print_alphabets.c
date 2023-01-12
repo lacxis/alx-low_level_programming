@@ -1,28 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* lists letters a-zA-Z followed by newline using putchar */
 
 /**
- * main - lists letters and exits
+ * main - lists letters in lower case along with upper case and exits
+ *
+ * Description - A program that list out letters with lower case first
+ * and later upper case and finishes with a new line.
+ *
  * Return: returns 0
  */
+
 int main(void)
 {
 	int ch;
 	int ar;
 
-	ch = 'a';
-	ar = 'A';
-	while (ch <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
-		ch++;
 	}
-	while (ar <= 'Z')
+
+	for (ar = 'A'; ar <= 'Z'; ar++)
 	{
 		putchar(ar);
-		ar++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
