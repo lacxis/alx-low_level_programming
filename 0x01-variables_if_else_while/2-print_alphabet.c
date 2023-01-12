@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* lists letters a-z lowercase followed by newline using putchar */
 
 /**
  * main - lists letters and exits
+ *
+ * Description -  A program that list all the alphabets in small letters and
+ * end the program in a new line using putchar function.
+
  * Return: returns 0
  */
+
 int main(void)
 {
 	int ch;
 
-	ch = 'a';
-	while (ch <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
-		ch++;
 	}
 
 	putchar('\n');
