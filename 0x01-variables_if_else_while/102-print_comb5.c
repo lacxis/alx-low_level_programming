@@ -1,9 +1,17 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
- *Return: Always 0 (success/correct)
-*/
+ * main - Prints all possible combinations of two 2 digit numbers
+ *
+ * Description - A program that prints out the possible combinations of two
+ * two-digit numbers that range from 0 to 99 and the two numbers must:
+ * Be separated by a space.
+ * Should be printed with two digits like 00, 01
+ * The combination of numbers separated by comma, followed by a space
+ * Printed in an ascending order
+ *
+ * Return: Always 0 (success/correct)
+ */
 int main(void)
 {
 	int first_nums;
