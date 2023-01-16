@@ -2,33 +2,39 @@
 
 /**
  * main- Print combinations of number
- * Return: 0 on SUCCESS
+ *
+ * Description - A program that prints out all possible different combinations
+ * of three digits and the three digits must:
+ * be different
+ * print out in ascending order
+ * start with the smallest combination of the three digits.
+ *
+ * * Return: return 0 on success
  */
 int main(void)
 {
-	int left;
-	int right;
-	int center;
+	char left;
+	char right;
+	char center;
 
 
 
-		for (left = 48; left <= 57; left++)
+		for (left = '0'; left <= '7'; left++)
 		{
-			for (center = left + 1; center <= 57; center++)
+			for (center = '1'; center <= '8'; center++)
 			{
-				for (right = center + 1 ; right <= 57; right++)
+				for (right = '2' ; right <= '9'; right++)
 				{
 					putchar(left);
 					putchar (center);
 					putchar (right);
 
-					if  ((left == 55) && (center == left + 1) && (right == center + 1))
+					if  (left != '7' || center != '8' || right != '9')
 					{
-						break;
-					}
+						putchar(',');
+						putchar (' ');
 
-					putchar(',');
-					putchar (' ');
+					}
 
 				}
 
