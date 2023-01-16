@@ -1,23 +1,29 @@
 #include <stdio.h>
+
 /**
- *main- prints all possible combination of numbers
- *Return: 0 on SUCCESS
-*/
+ * main- prints all possible combination of numbers
+ *
+ * Description - A program that prints all possible combinations of
+ * single-digit numbers
+ *
+ * Return: returns 0 on success
+ */
 int main(void)
 {
-	int number;
+	char number;
 
 
-	for (number = 48; number <= 57; number++)
+	for (number = '0'; number <= '9'; number++)
 	{
 		putchar(number);
 
-		if (number == 57)
+		if (number == '9')
 		{
 			break;
 		}
 
 		putchar(',');
+
 		putchar (' ');
 	}
 
