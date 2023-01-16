@@ -13,28 +13,29 @@
  */
 int main(void)
 {
-	char left;
-	char right;
-	char center;
+	int left;
+	int right;
+	int center;
 
 
 
-		for (left = '0'; left <= '7'; left++)
+		for (left = 48; left <= 57; left++)
 		{
-			for (center = '1'; center <= '8'; center++)
+			for (center = left + 1; center <= 57; center++)
 			{
-				for (right = '2' ; right <= '9'; right++)
+				for (right = center + 1 ; right <= 57; right++)
 				{
 					putchar(left);
 					putchar (center);
 					putchar (right);
 
-					if  (left != '7' || center != '8' || right != '9')
+					if  ((left == 55) && (center == left + 1) && (right == center + 1))
 					{
-						putchar(',');
-						putchar (' ');
-
+						break;
 					}
+
+					putchar(',');
+					putchar (' ');
 
 				}
 
