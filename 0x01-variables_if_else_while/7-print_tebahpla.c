@@ -2,16 +2,24 @@
 #include <stdlib.h>
 
 /**
- *   main - prints the alphabet in lowercase and in uppercase,
+ *   main - print alphabet reverse
+ *
+ *   Description- A program that prints out the lowercase alphabet in reverse
  *   followed by a new line
+ *
  *   Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
 
 	for (i = 'z'; i >= 'a'; i--)
+	{
 		putchar(i);
+	}
+
 	putchar('\n');
-	exit(EXIT_SUCCESS);
+
+	return (0);
 }
