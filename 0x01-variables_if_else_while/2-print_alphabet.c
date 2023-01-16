@@ -6,7 +6,7 @@
  *
  * Description -  A program that list all the alphabets in small letters and
  * end the program in a new line using putchar function.
-
+ *
  * Return: returns 0
  */
 
