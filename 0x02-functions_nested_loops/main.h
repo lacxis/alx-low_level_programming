@@ -1,5 +1,4 @@
-#ifndef _MAIN_
-#define _MAIN_
+
 int _putchar (int c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -13,5 +12,3 @@ int add(int, int);
 void print_to_98(int n);
 int _isalpha(int c);
 void print_times_table(int n);
-
-#endif
